@@ -4,7 +4,7 @@ You're launched high into the atmosphere! The apex of your trajectory just barel
 
 The Elf explains that you've arrived at Snow Island and apologizes for the lack of snow. He'll be happy to explain the situation, but it's a bit of a walk, so you have some time. They don't get many visitors up here; would you like to play a game in the meantime?
 
-## Part 1
+## Part One
 
 As you walk, the Elf shows you a small bag and some cubes which are either red, green, or blue. Each time you play this game, he will hide a secret number of cubes of each color in the bag, and your goal is to figure out information about the number of cubes.
 
@@ -32,7 +32,7 @@ Determine which games would have been possible if the bag had been loaded with o
 
 Your puzzle answer was `2169`.
 
-## Part 2
+## Part Two
 
 The Elf says they've stopped producing snow because they aren't getting any water! He isn't sure why the water stopped; however, he can show you how to get to the water source to check it out for yourself. It's just up ahead!
 
