@@ -8,16 +8,16 @@ I'm using Python 3.10.12. to solve the challenges and the solutions shouldn't in
 
 | Day | Part 1 | Part 2 | Comments |
 | --- | ------ | ------ | -------- |
-| [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1) | [✅](2023/day1/part1.py) | [✅](2023/day1/part2.py) | |
-| [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2) | [✅](2023/day2/part1.py) | [✅](2023/day2/part2.py) | |
-| [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3) | [✅](2023/day3/part1.py) | [✅](2023/day3/part2.py) | |
-| [Day 4: Scratchcards](https://adventofcode.com/2023/day/4) | [✅](2023/day4/part1.py) | [✅](2023/day4/part2.py) | |
-| [Day 5: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | [✅](2023/day5/part1.py) | [✅](2023/day5/part2.py) | |
-| [Day 6: Wait For It](https://adventofcode.com/2023/day/6) | [✅](2023/day6/part1.py) | [✅](2023/day6/part2.py) | |
-| [Day 7: Camel Cards](https://adventofcode.com/2023/day/7) | [✅](2023/day7/part1.py) | [✅](2023/day7/part2.py) | |
-| [Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8) | [✅](2023/day8/part1.py) | [✅](2023/day8/part2.py) | |
-| [Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9) | [✅](2023/day9/part1.py) | [✅](2023/day9/part2.py) | |
-| [Day 10: Pipe Maze](https://adventofcode.com/2023/day/10) | [✅](2023/day10/part1.py) | ❌ | I haven't solved part 2 yet. |
+| [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1) | [✅](2023/day1/part--1.py) | [✅](2023/day1/part-2.py) | |
+| [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2) | [✅](2023/day2/part-1.py) | [✅](2023/day2/part-2.py) | |
+| [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3) | [✅](2023/day3/part-1.py) | [✅](2023/day3/part-2.py) | |
+| [Day 4: Scratchcards](https://adventofcode.com/2023/day/4) | [✅](2023/day4/part-1.py) | [✅](2023/day4/part-2.py) | |
+| [Day 5: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | [✅](2023/day5/part-1.py) | [✅](2023/day5/part-2.py) | |
+| [Day 6: Wait For It](https://adventofcode.com/2023/day/6) | [✅](2023/day6/part-1.py) | [✅](2023/day6/part-2.py) | |
+| [Day 7: Camel Cards](https://adventofcode.com/2023/day/7) | [✅](2023/day7/part-1.py) | [✅](2023/day7/part-2.py) | |
+| [Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8) | [✅](2023/day8/part-1.py) | [✅](2023/day8/part-2.py) | |
+| [Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9) | [✅](2023/day9/part-1.py) | [✅](2023/day9/part-2.py) | |
+| [Day 10: Pipe Maze](https://adventofcode.com/2023/day/10) | [✅](2023/day10/part-1.py) | ❌ | I haven't solved part 2 yet. |
 
 ## 2022 Solutions
 
