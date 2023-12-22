@@ -19,6 +19,7 @@ I'm using Python 3.10.12. to solve the challenges and the solutions shouldn't in
 | [Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9) | [✅](2023/day9/part-1.py) | [✅](2023/day9/part-2.py) | |
 | [Day 10: Pipe Maze](https://adventofcode.com/2023/day/10) | [✅](2023/day10/part-1.py) | ❌ | I haven't solved part 2 yet. |
 | [Day 11: Cosmic Expansion](https://adventofcode.com/2023/day/11) | [✅](2023/day11/part-1.py) | [✅](2023/day11/part-2.py) | |
+| [Day 12: Hot Springs](https://adventofcode.com/2023/day/12) | [✅](2023/day12/part-1.py) | [✅](2023/day12/part-2.py) | |
 
 ## 2022 Solutions
 
