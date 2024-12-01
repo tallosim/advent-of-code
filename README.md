@@ -2,7 +2,13 @@
 
 This repository contains my solutions to the [Advent of Code](https://adventofcode.com/) challenges.
 
-I'm using Python 3.10.12. to solve the challenges and the solutions shouldn't include any external libraries.
+I'm using Python 3.10.12 (for 2022 and 2023) and Kotlin 2.0.20 (for 2024) to solve the challenges and the solutions shouldn't include any external libraries.
+
+## 2024 Solutions
+
+| Day | Part 1                 | Part 2 | Comments |
+| --- |------------------------| ------ | -------- |
+| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | [✅](2024/day1/Main.kt) | [✅](2024/day1/Main.kt) | |
 
 ## 2023 Solutions
 
