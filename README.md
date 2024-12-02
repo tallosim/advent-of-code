@@ -9,6 +9,7 @@ I'm using Python 3.10.12 (for 2022 and 2023) and Kotlin 2.0.20 (for 2024) to sol
 | Day | Part 1                 | Part 2 | Comments |
 | --- |------------------------| ------ | -------- |
 | [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | [✅](2024/day1/Main.kt) | [✅](2024/day1/Main.kt) | |
+| [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2) | [✅](2024/day2/Main.kt) | [✅](2024/day2/Main.kt) | |
 
 ## 2023 Solutions
 
