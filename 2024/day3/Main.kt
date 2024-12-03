@@ -4,27 +4,27 @@ import java.io.File
 
 const val INPUT_FILE = "2024/day3/input.txt"
 
+enum class Operation { MUL, DO, DONT }
+
 fun main() {
     val input = File(INPUT_FILE).readText()
+    val multiply = { m: MatchResult -> m.groupValues[1].toInt() * m.groupValues[2].toInt() }
 
-    val multiplications = Regex("mul\\((\\d{1,3}),(\\d{1,3})\\)").findAll(input)
-        .map { it.groupValues[1].toInt() * it.groupValues[2].toInt() to it.range }
-        .sortedBy { it.second.first }
-
-    val part1 = multiplications.sumOf { it.first }
+    // Part 1
+    val part1 = Regex("mul\\((\\d{1,3}),(\\d{1,3})\\)").findAll(input).sumOf(multiply)
     println("Part 1: $part1")
 
-    val instructionLocations = Regex("(do\\(\\))|(don't\\(\\))").findAll(input)
-        .map { it.groupValues[1].isNotEmpty() to it.range }
-        .sortedBy { it.second.first }
-
-    val part2 = instructionLocations.sumOf { (enabled, range) ->
-        val nextInstruction = instructionLocations.firstOrNull { (_, r) -> range.last < r.first }
-        val multiplication = multiplications.firstOrNull { (_, r) -> range.last < r.first }
-        if (enabled && multiplication != null && (nextInstruction == null || multiplication.second.last < nextInstruction.second.first))
-            multiplication.first
-        else 0
-    } + multiplications.first().first
+    // Part 2
+    val part2 = listOf(
+        Regex("mul\\((\\d{1,3}),(\\d{1,3})\\)").findAll(input).map { Operation.MUL to it },
+        Regex("do\\(\\)").findAll(input).map { Operation.DO to it },
+        Regex("don't\\(\\)").findAll(input).map { Operation.DONT to it }
+    ).flatMap { it.toList() }.sortedBy { it.second.range.first }.fold(0 to true) { (acc, enabled), (operation, match) ->
+        when (operation) {
+            Operation.MUL -> (if (enabled) acc + multiply(match) else acc) to enabled
+            Operation.DO -> acc to true
+            Operation.DONT -> acc to false
+        }
+    }.first
     println("Part 2: $part2")
-
 }
