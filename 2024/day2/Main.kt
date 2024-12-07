@@ -5,7 +5,7 @@ import kotlin.math.abs
 
 const val INPUT_FILE = "2024/day2/input.txt"
 
-private fun checkIsSafe(row: List<Int>): Boolean {
+private fun checkIsSafe(row: List<Long>): Boolean {
     val pairs = row.zipWithNext()
 
     val directions = pairs.map { (a, b) -> a > b }

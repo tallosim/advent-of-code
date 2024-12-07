@@ -11,7 +11,7 @@ fun main() {
     val input = readInput(INPUT_FILE)
     val (rules, pages) = input.splitAt(input.indexOfFirst { it.isEmpty() })
 
-    val dependency = mutableMapOf<Int, MutableList<Int>>()
+    val dependency = mutableMapOf<Long, MutableList<Long>>()
     rules.forEach { (before, after) -> dependency.getOrPut(after) { mutableListOf() }.add(before) }
 
     val (part1, part2) = pages.map { page ->
