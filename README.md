@@ -6,13 +6,14 @@ I'm using Python 3.10.12 (for 2022 and 2023) and Kotlin 2.0.20 (for 2024) to sol
 
 ## 2024 Solutions
 
-| Day                                                              | Part 1                 | Part 2                 | Comments |
-|------------------------------------------------------------------|------------------------|------------------------| -------- |
-| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | [✅](2024/day1/Main.kt) | [✅](2024/day1/Main.kt) | |
-| [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)  | [✅](2024/day2/Main.kt) | [✅](2024/day2/Main.kt) | |
-| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3)       | [✅](2024/day3/Main.kt) | [✅](2024/day3/Main.kt) | |
-| [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)       | [✅](2024/day4/Main.kt) | [✅](2024/day4/Main.kt) | |
-| [Day 5: Print Queue](https://adventofcode.com/2024/day/5)        | [✅](2024/day5/Main.kt) | [✅](2024/day5/Main.kt) | |
+| Day                                                              | Part 1                 | Part 2                | Comments                                                                                         |
+|------------------------------------------------------------------|------------------------|-----------------------|--------------------------------------------------------------------------------------------------|
+| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | [✅](2024/day1/Main.kt) | [✅](2024/day1/Main.kt) |                                                                                                  |
+| [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)  | [✅](2024/day2/Main.kt) | [✅](2024/day2/Main.kt) |                                                                                                  |
+| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3)       | [✅](2024/day3/Main.kt) | [✅](2024/day3/Main.kt) |                                                                                                  |
+| [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)       | [✅](2024/day4/Main.kt) | [✅](2024/day4/Main.kt) |                                                                                                  |
+| [Day 5: Print Queue](https://adventofcode.com/2024/day/5)        | [✅](2024/day5/Main.kt) | [✅](2024/day5/Main.kt) |                                                                                                  |
+| [Day 6: The Great Escape](https://adventofcode.com/2024/day/6)   | [✅](2024/day6/Main.kt) | [☑️](2024/day6/Main.kt) | Part 2: My solution is 3 less than the valid solution, but I wasn't able to figure it out why... |
 
 
 

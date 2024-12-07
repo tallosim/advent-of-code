@@ -11,13 +11,14 @@ data class Guard(val x: Int, val y: Int, val direction: Direction) {
 }
 
 data class Environment(val map: List<List<Char>>) {
-    val width = map[0].size
-    val height = map.size
+    private val width = map[0].size
+    private val height = map.size
 
     val blocks = mutableSetOf<Position>()
-    val history = mutableListOf<Guard>()
+    val history = mutableSetOf<Guard>()
+    val visited: Set<Position> get() = history.map { it.position }.toSet()
 
-    var start: Guard? = null
+    lateinit var start: Guard
     var guard: Guard
 
     init {
@@ -32,7 +33,7 @@ data class Environment(val map: List<List<Char>>) {
                 }
             }
         }
-        guard = start!!
+        guard = start
     }
 
     override fun toString(): String = buildString {
@@ -91,9 +92,7 @@ data class Environment(val map: List<List<Char>>) {
         } in blocks
     }
 
-    fun isInLoop(): Boolean {
-        return history.takeLast(2).all { g -> history.count { it == g } > 1 }
-    }
+    fun isInLoop(): Boolean = guard in history
 }
 
 fun main() {
@@ -104,27 +103,24 @@ fun main() {
     while (env.isInside()) {
         if (env.isBlockInFront()) env.moveRight()
         else env.moveForward()
+
     }
-    val part1 = env.history.map { it.position }.distinct().size
-    println("Part 1: $part1")
+    println("Part 1: ${env.visited.size}")
 
     // Part 2 - Find all possible new block positions, where the guard ends up in a loop
     val startEnv = Environment(map)
-    val candidates = env.history.map { it.position }.distinct()
     var loopCount = 0
-    for ((index, block) in candidates.withIndex()) {
-        println("[${index + 1}/${candidates.size}] Testing block $block, loop count: $loopCount")
-
+    for (block in env.visited) {
         val newEnv = startEnv.copy()
-        newEnv.blocks.add(block)
+        newEnv.blocks += block
 
         while (newEnv.isInside()) {
-            if (newEnv.isBlockInFront()) newEnv.moveRight()
-            else newEnv.moveForward()
             if (newEnv.isInLoop()) {
                 loopCount++
                 break
             }
+            if (newEnv.isBlockInFront()) newEnv.moveRight()
+            else newEnv.moveForward()
         }
     }
     println("Part 2: $loopCount")
