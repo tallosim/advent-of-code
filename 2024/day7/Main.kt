@@ -1,6 +1,6 @@
 package day7
 
-import readInput
+import common.readInput
 import kotlin.math.pow
 
 const val INPUT_FILE = "2024/day7/input.txt"

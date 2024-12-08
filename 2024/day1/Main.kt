@@ -1,6 +1,6 @@
 package day1
 
-import readInput
+import common.readInput
 import kotlin.math.abs
 
 const val INPUT_FILE = "2024/day1/input.txt"

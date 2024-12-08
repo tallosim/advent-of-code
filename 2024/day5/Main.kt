@@ -1,6 +1,6 @@
 package day5
 
-import readInput
+import common.readInput
 
 const val INPUT_FILE = "2024/day5/input.txt"
 
